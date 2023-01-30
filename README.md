@@ -41,7 +41,7 @@ This is a solution to the [Product preview card component](https://www.frontendm
 
 <h2 align="center">Links</h2>
 
-- Solution URL: [Product preview card component (HTML + SASS) | Frontend Mentor](https://www.frontendmentor.io/solutions/fylo-dark-theme-landing-page-html-js-sass-4YQ4iJ4FG8)
+- Solution URL: [Product preview card component (HTML + SASS) | Frontend Mentor](https://www.frontendmentor.io/solutions/product-preview-card-component-html-sass-4rnsVFnqyx)
 - Live Site URL: [https://product-card-component-c98bee.netlify.app/](https://product-card-component-c98bee.netlify.app/)
 
 <br>
