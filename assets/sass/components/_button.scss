@@ -1,0 +1,25 @@
+@use "../abstracts/variables" as *;
+@use "../abstracts/mixins" as *;
+@use "../abstracts/functions" as *;
+
+.button {
+  border: 0;
+  border-radius: 8px;
+  background-color: hsl($clr-dark-cyan);
+  padding: rem(16px);
+
+  font-weight: $fw-bold;
+  line-height: rem(17px);
+  color: $clr-white;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: rem(12px);
+
+  cursor: pointer;
+
+  &:hover {
+    background-color: hsl($clr-very-dark-cyan);
+  }
+}

@@ -1,0 +1,81 @@
+@use "../abstracts/variables" as *;
+@use "../abstracts/mixins" as *;
+@use "../abstracts/functions" as *;
+
+.card {
+  border-radius: 10px;
+  overflow: hidden;
+  background-color: $clr-white;
+
+  @include media-breakpoint-on($screen-size-md) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    max-width: rem(600px);
+  }
+
+  &__content {
+    padding: rem(24px);
+
+    @include media-breakpoint-on($screen-size-md) {
+      padding: rem(32px);
+    }
+  }
+
+  &__category {
+    margin-bottom: rem(12px);
+    font-size: rem(12px);
+    line-height: rem(15px);
+    letter-spacing: 5px;
+    color: hsl($clr-dark-grayish-blue);
+    text-transform: uppercase;
+
+    @include media-breakpoint-on($screen-size-md) {
+      margin-bottom: rem(20px);
+    }
+  }
+
+  &__title {
+    margin-bottom: rem(16px);
+    font-family: $ff-fraunces;
+    color: hsl($clr-very-dark-blue);
+    @include font-swl($fw-bold, rem(32px), rem(32px));
+
+    @include media-breakpoint-on($screen-size-md) {
+      margin-bottom: rem(24px);
+    }
+  }
+
+  &__description {
+    margin-bottom: rem(24px);
+
+    @include media-breakpoint-on($screen-size-md) {
+      margin-bottom: rem(29px);
+    }
+  }
+
+  &__price-container {
+    margin-bottom: rem(20px);
+    display: flex;
+    align-items: center;
+    gap: rem(19px);
+
+    @include media-breakpoint-on($screen-size-md) {
+      margin-bottom: rem(30px);
+    }
+  }
+
+  &__discount-price {
+    font-family: $ff-fraunces;
+    color: hsl($clr-dark-cyan);
+    @include font-swl($fw-bold, rem(32px), rem(32px));
+  }
+
+  &__price {
+    font-size: rem(13px);
+    text-decoration: line-through;
+  }
+
+  &__cta {
+    width: 100%;
+  }
+}

@@ -1,0 +1,24 @@
+@use "../abstracts/variables" as *;
+@use "../abstracts/mixins" as *;
+@use "../abstracts/functions" as *;
+
+body {
+  font-family: $ff-montserrat;
+  color: hsl($clr-dark-grayish-blue);
+  background-color: hsl($clr-cream);
+  min-height: 100vh;
+  display: grid;
+  place-content: center;
+  padding-inline: 1rem;
+  @include font-swl($fw-medium, rem($fs-body), rem(23px));
+}
+
+.visually-hidden:not(:focus):not(:active) {
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
